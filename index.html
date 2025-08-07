@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walidator Mikrorachunku Podatkowego</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Walidator Mikrorachunku Podatkowego</h1>
+        <p>Wprowadź numer mikrorachunku, aby sprawdzić jego poprawność.</p>
+        <div class="input-group">
+            <input type="text" id="microAccountInput" placeholder="Wprowadź numer mikrorachunku (np. 72 1010 0071 2221 8611 1204 0360)">
+            <button id="validateButton">Waliduj</button>
+        </div>
+        <div id="result" class="result-area">
+            <!-- Validation results will be displayed here -->
+        </div>
+        <p class="info-note">Pamiętaj, aby zawsze generować i sprawdzać swój mikrorachunek na oficjalnej stronie: <a href="https://www.podatki.gov.pl" target="_blank">podatki.gov.pl</a></p>
+        <div id="logOutput" class="log-output">
+            <h3>Debug Log:</h3>
+            <pre></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

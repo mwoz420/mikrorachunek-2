@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+.result-area {
+    min-height: 80px;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-area.success {
+    background-color: #e6ffe6;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.result-area.error {
+    background-color: #ffe6e6;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.result-area .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.info-note {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.info-note a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.info-note a:hover {
+    text-decoration: underline;
+}
+
+.log-output {
+    margin-top: 30px;
+    text-align: left;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.log-output h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.log-output pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .input-group button {
+        border-radius: 4px;
+    }
+}
